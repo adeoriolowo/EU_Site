@@ -1,0 +1,247 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <!-- Title -->
+    <title>@ViewBag.Title | Elizade University</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="~/Content/style/img/favicon.ico">
+
+    <!-- Core Stylesheet -->
+    <link href="~/Content/style/style.css" rel="stylesheet" />
+
+    <!-- Responsive CSS -->
+    <link href="~/Content/style/css/responsive.css" rel="stylesheet" />
+
+</head>
+
+<body>
+    <!-- ***** Preloader Start ***** -->
+    <div id="preloader">
+        <div class="mosh-preloader"></div>
+    </div>
+
+    <!-- ***** Header Area Start ***** -->
+    <header class="header_area clearfix">
+        <div class="container-fluid h-100">
+            <div class="row h-100">
+                <!-- Menu Area Start -->
+                <div class="col-12 h-100">
+                    <div class="menu_area h-100">
+                        <nav class="navbar h-100 navbar-expand-lg align-items-center">
+                            <!-- Logo -->
+                            <a class="navbar-brand" href="@Url.Action("Index","Home")"><img src="~/Content/style/img/logo.jpg" alt="logo"></a>
+
+                            <!-- Menu Area -->
+                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mosh-navbar" aria-controls="mosh-navbar" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+
+                            <div class="collapse navbar-collapse justify-content-end" id="mosh-navbar">
+                                <ul class="navbar-nav animated" id="nav">
+                                    <li class="nav-item active"><a class="nav-link" href="@Url.Action("Index","Home")">Home</a></li>
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle" href="#" id="moshDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Admission</a>
+                                        <div class="dropdown-menu" aria-labelledby="moshDropdown">
+                                            <a class="dropdown-item" href="#">Admission</a>
+                                            <a class="dropdown-item" href="#">Why Elizade?</a>
+                                            <a class="dropdown-item" href="#">Prospectus</a>
+                                            <a class="dropdown-item" href="#">Tuition Fee</a>
+                                            <a class="dropdown-item" href="http://pay.elizadeuniversity.edu.ng/">Apply Now</a>
+                                            <a class="dropdown-item" href="contact.html">Contact</a>
+                                            <div class="dropdown-divider"></div>
+                                            <a class="dropdown-item" href="elements.html">Elements</a>
+                                        </div>
+                                    </li>
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle" href="#" id="moshDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Faculties</a>
+                                        <div class="dropdown-menu" aria-labelledby="moshDropdown">
+                                            <a class="dropdown-item" href="index.html">Home</a>
+                                            <a class="dropdown-item" href="about.html">About Us</a>
+                                            <a class="dropdown-item" href="services.html">Services</a>
+                                            <a class="dropdown-item" href="portfolio.html">Portfolio</a>
+                                            <a class="dropdown-item" href="blog.html">Blog</a>
+                                            <a class="dropdown-item" href="contact.html">Contact</a>
+                                            <div class="dropdown-divider"></div>
+                                            <a class="dropdown-item" href="elements.html">Elements</a>
+                                        </div>
+                                    </li>
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle" href="#" id="moshDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">News & Events</a>
+                                        <div class="dropdown-menu" aria-labelledby="moshDropdown">
+                                            <a class="dropdown-item" href="@Url.Action("Index","News")">News@Elizade</a>
+                                            <a class="dropdown-item" href="@Url.Action("Index","Bulletin")">EU-Bulletin</a>
+                                        </div>
+                                    </li>
+                                    
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle" href="#" id="moshDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">EU-Space</a>
+                                        <div class="dropdown-menu" aria-labelledby="moshDropdown">
+                                            <a class="dropdown-item" href="http://my.elizadeuniversity.edu.ng/">EU-Portal</a>
+                                            <a class="dropdown-item" href="http://library.elizadeuniversity.edu.ng:83/">EU-Library</a>
+                                            <a class="dropdown-item" href="#">Email</a>
+                                            <a class="dropdown-item" href="#">iLearn</a>
+                                            <a class="dropdown-item" href="contact.html">EU-OER</a>
+                                        </div>
+                                    </li>
+                                    <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="portfolio.html">Portfolio</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                                </ul>
+                                <!-- Search Form Area Start -->
+                                <div class="search-form-area animated">
+                                    <form action="#" method="post">
+                                        <input type="search" name="search" id="search" placeholder="Type keywords &amp; hit enter">
+                                        <button type="submit" class="d-none"><img src="img/core-img/search-icon.png" alt="Search"></button>
+                                    </form>
+                                </div>
+                                <!-- Search btn -->
+                                <div class="search-button">
+                                    <a href="#" id="search-btn"><img src="img/core-img/search-icon.png" alt="Search"></a>
+                                </div>
+                                <!-- Login/Register btn -->
+                                <div class="login-register-btn">
+                                    @if (User.Identity.IsAuthenticated)
+                                    {
+                                        <a href="#">@User.Identity.Name</a>
+                                    }
+                                    else
+                                    {
+                                        <a href="@Url.Action("Login","Account")">Login</a>
+                                    }
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- ***** Header Area End ***** -->
+    
+    @RenderBody()
+
+    <!-- ***** Footer Area Start ***** -->
+    <footer class="footer-area clearfix">
+        <!-- Top Fotter Area -->
+        <div class="top-footer-area section_padding_100_0">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-sm-6 col-lg-3">
+                        <div class="single-footer-widget mb-100">
+                            <a href="#" class="mb-50 d-block"><img src="~/Content/style/img/logo2.png" alt=""></a>
+                            <p>Let's Go Higher</p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-3">
+                        <div class="single-footer-widget mb-100">
+                            <h5>Quick links</h5>
+                            <ul>
+                                <li><a href="@Url.Action("Index","Home")">Home</a></li>
+                                <li><a href="@Url.Action("Index","Admission")">Admission</a></li>
+                                <li><a href="http://my.elizadeuniversity.edu.ng/">EU-Portal</a></li>
+                                <li><a href="#">About EU</a></li>
+                                <li><a href="#">Working at EU</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-3">
+                        <div class="single-footer-widget mb-100">
+                            <h5>News</h5>
+                            <div class="footer-single--blog-post">
+                                <a href="#" class="blog-post-date">
+                                    <p>23 September, 2017</p>
+                                </a>
+                                <a href="#" class="blog-post-title">
+                                    <h6>Why we love stock photos</h6>
+                                </a>
+                            </div>
+                            <div class="footer-single--blog-post">
+                                <a href="#" class="blog-post-date">
+                                    <p>22 September, 2017</p>
+                                </a>
+                                <a href="#" class="blog-post-title">
+                                    <h6>Designin on grid. A few rules. </h6>
+                                </a>
+                            </div>
+                            <div class="footer-single--blog-post">
+                                <a href="#" class="blog-post-date">
+                                    <p>20 September, 2017</p>
+                                </a>
+                                <a href="#" class="blog-post-title">
+                                    <h6>2017 World Design Congress</h6>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-3">
+                        <div class="single-footer-widget mb-100">
+                            <h5>Contact Information</h5>
+                            <div class="footer-single-contact-info d-flex">
+                                <div class="contact-icon">
+                                    <img src="img/core-img/map.png" alt="">
+                                </div>
+                                <p>Elizade University P.M.B. 002, Ilara-Mokin, Ondo State – Nigeria</p>
+                            </div>
+                            <div class="footer-single-contact-info d-flex">
+                                <div class="contact-icon">
+                                    <img src="img/core-img/call.png" alt="">
+                                </div>
+                                <p><a href="tel:+234-8158355812">+234-8158355812</a> <br> <a href="tel:+234-8101563682">+234-8101563682</a></p>
+                            </div>
+                            <div class="footer-single-contact-info d-flex">
+                                <div class="contact-icon">
+                                    <img src="img/core-img/message.png" alt="">
+                                </div>
+                                <p><a href="mailto:info@elizadeuniversity.edu.ng">info@elizadeuniversity.edu.ng</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Fotter Bottom Area -->
+        <div class="footer-bottom-area">
+            <div class="container h-100">
+                <div class="row h-100">
+                    <div class="col-12 h-100">
+                        <div class="footer-bottom-content h-100 d-md-flex justify-content-between align-items-center">
+                            <div class="copyright-text">
+                                <p>
+                                    &copy;@DateTime.Now.Year Elizade University. All rights reserved | Powered by ICT Unit
+                                </p>
+                            </div>
+                            <div class="footer-social-info">
+                                @*<a href="#"><i class="fa fa-pinterest" aria-hidden="true"></i></a>*@
+                                <a href="https://web.facebook.com/ElizadeUniversity/"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                                <a href="https://twitter.com/ElizadeUni"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                                @*<a href="#"><i class="fa fa-dribbble" aria-hidden="true"></i></a>
+                                <a href="#"><i class="fa fa-behance" aria-hidden="true"></i></a>*@
+                                <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- ***** Footer Area End ***** -->
+    <!-- jQuery-2.2.4 js -->
+    <script src="~/Content/style/js/jquery-2.2.4.min.js"></script>
+    <!-- Popper js -->
+    <script src="~/Content/style/js/popper.min.js"></script>
+    <!-- Bootstrap js -->
+    <script src="~/Content/style/js/bootstrap.min.js"></script>
+    <!-- All Plugins js -->
+    <script src="~/Content/style/js/plugins.js"></script>
+    <!-- Active js -->
+    <script src="~/Content/style/js/active.js"></script>
+</body>
+
+</html>
